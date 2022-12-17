@@ -1,0 +1,84 @@
+/* 
+1200px - container = max-width: 970px;
+992px - container = max-width: 750px;
+768px - container = max-width: unset;
+576px - container = max-width: unset;
+475px - container = max-width: unset;
+375px - container = max-width: unset;
+320px - container = max-width: unset;
+*/
+
+@media (max-width:1200px) {
+    .container {
+        max-width: 970px;
+    }
+
+    .box__card {
+        width: 280px;
+    }
+
+    .shoes-content {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+}
+
+@media(max-width:992px) {
+    .container {
+        max-width: unset;
+    }
+
+    .navbar__menu-icon {
+        display: inline-block;
+    }
+
+    .navbar__menu-icon:focus~.navbar__list {
+        top: 64px;
+    }
+
+    .navbar {
+        padding: 8px 0;
+    }
+
+    .navbar__list {
+        position: absolute;
+        top: -1000px;
+        right: 0;
+        flex-direction: column;
+        background: #322E41;
+        ;
+        padding: 0 50px;
+        transition: .6s;
+        border-radius: 0 0 0 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        max-width: unset;
+    }
+
+}
+
+@media (max-width:576px) {
+    .shoes-right {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:375px) {
+    .form {
+        align-items: center;
+    }
+    
+    .form__input, .form__textarea, .form__button{
+        width: 290px;
+    }
+    
+}
